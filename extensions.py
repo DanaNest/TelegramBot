@@ -2,11 +2,11 @@ import requests
 import json
 from config import currency
 
-
+#класс собственного исключения
 class APIException(Exception):
     pass
 
-
+#класс с описаниями ошибок и получение значения конвертации по ссылке
 class CurrencyConvert:
     @staticmethod
     def get_price(quote: str , base: str, amount: str):
